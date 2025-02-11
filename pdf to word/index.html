@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>File Conversion Made Easy</h1>
+
+        <!-- Select Conversion Type -->
+        <div class="file-type">
+            <label for="fileType">Choose conversion type:</label>
+            <select id="fileType">
+                <option value="pdf-to-word">PDF to Word</option>
+                <option value="word-to-pdf">Word to PDF</option>
+            </select>
+        </div>
+
+        <!-- File Upload -->
+        <input type="file" id="fileInput" multiple>
+
+        <!-- Convert Button -->
+        <button id="convertButton">Convert</button>
+
+        <!-- Download Link for Converted File -->
+        <a id="downloadLink" style="display:none" href="#" download="converted-file">Download Converted File</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
